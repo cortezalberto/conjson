@@ -33,6 +33,10 @@
                             <label for="image">Imagen</label>
                             <div class="control">
                                 <input type="file" name="image" value="<%= product.image %>" class="product_img">
+                               
+                                <input type="hidden" name="oldImage" value="<%= product.image %>">
+                               
+                           
                             </div>
                         </div>
 

@@ -1,30 +1,30 @@
 [
  {
-  "name": "ggggg",
-  "image": "",
-  "price": "3",
-  "descuento": "3",
-  "id": "4"
+  "name": "Cafetera ",
+  "image": "img-cafetera-moulinex.jpg",
+  "price": "1",
+  "descuento": "1",
+  "id": "1"
  },
  {
-  "name": "Gonzalo",
-  "image": "",
-  "price": "33",
-  "descuento": "0",
-  "id": 5
+  "id": "2",
+  "name": "MacBook Pro 2019",
+  "descuento": "20",
+  "price": "230000",
+  "image": "img-macbook-pro-2019.jpg"
  },
  {
-  "name": "sandra alonso",
-  "image": "",
-  "price": "33",
-  "descuento": "44",
-  "id": 6
+  "id": "3",
+  "name": "Samsung Galaxy S10",
+  "descuento": "10",
+  "price": "70500",
+  "image": "img-samsung-galaxy-s10.jpg"
  },
  {
-  "name": "speedy gonzales",
-  "image": "",
-  "price": "34",
-  "descuento": "55",
-  "id": 7
+  "id": "4",
+  "name": "SmartTv Samsung 43",
+  "descuento": 10,
+  "price": 23000,
+  "image": "img-tv-samsung-smart.jpg"
  }
 ]

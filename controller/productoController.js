@@ -70,10 +70,10 @@ let productController = {
        
        
         //Analizar este caso
-     //   product.image = req.params.image ? req.body.image : req.body.oldImage;
+       product.image = req.params.image ? req.body.image : req.body.oldImage;
         
        
-     //   delete product.oldImage;
+        delete product.oldImage;
 
 
         // Delego la responsabilidad al modelo que actualice
