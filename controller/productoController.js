@@ -65,8 +65,9 @@ let productController = {
         // El id lo saco de params y el resto de los campos del body
         product = req.body;
         product.id = req.params.id;
-        console.log(req.body.name)
-        console.log(req.body.image)
+
+        console.log(product)
+       
        
         //Analizar este caso
      //   product.image = req.params.image ? req.body.image : req.body.oldImage;
@@ -85,7 +86,7 @@ let productController = {
 // Función que elimina del Array visitados ek producto seleccionado
     destroy: (req, res) => {
         console.log('entre destroy')
-        console.log(req.params.id)
+        productModel.delete(req.params.id);
 
  // Ahora se mostrará todo porque los productos los varga de un archivo       
         res.redirect('/')

@@ -70,6 +70,8 @@ const model = function (name) {
 
      // Elimino el registro en el archivo según un id    
         delete: function(id) {
+
+            console.log('Elimino :' + id)
             let rows = this.readFile();
             let updatedRows = rows.filter(row => {
                 return row.id != id;
