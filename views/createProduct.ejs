@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('partials/head') %>
+
+    <body>
+
+        <%- include('partials/header') %>
+
+        
+        <section class="banner">
+            <img src="/images/img-home-banner.jpg" alt="Banner de ofertas">
+        </section>
+
+
+            <main>
+                <h3>Alta de Producto</h3>
+                <section class="ultima-visita">
+             
+
+                  
+
+
+                        <form action="/products/store" method="POST"  >
+
+                            <div class="field">
+                                <label for="name">Nombre</label>
+                                <div class="control">
+                                    <input type="text" name="name">
+                                </div>
+                             
+                            </div>
+
+                            <div class="field">
+                                <label for="image">Imagen</label>
+                                <div class="control">
+                                    <input type="file" name="image">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="price">Precio</label>
+                                <div class="control">
+                                    <input type="text" name="price">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="descuento">descuento</label>
+                                <div class="control">
+                                   
+                                    <input type="text" name="descuento">
+                                </div>
+                            </div>
+
+                         
+
+                          
+
+                            <div class="field">
+                                <div class="control">
+                                    <button type="submit">Crear producto</button>
+                                </div>
+                            </div>
+                        </form>
+
+
+
+                    </div>
+                </section>
+
+
+
+
+
+            </main>
+            <%- include('partials/footer') %>
+
+
+    </body>
+
+</html>

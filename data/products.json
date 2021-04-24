@@ -1,0 +1,43 @@
+[
+ {
+  "name": "cafetera",
+  "image": "",
+  "price": "6770",
+  "descuento": "40",
+  "id": "1"
+ },
+ {
+  "name": "Beto casella",
+  "image": "",
+  "price": "1",
+  "descuento": "1",
+  "id": "2"
+ },
+ {
+  "name": "cortez",
+  "price": "70500",
+  "descuento": "10",
+  "id": "3"
+ },
+ {
+  "id": "4",
+  "name": "SmartTv Samsung 43",
+  "descuento": "10",
+  "price": "23000",
+  "image": "img-tv-samsung-smart.jpg"
+ },
+ {
+  "name": "Gonzalo",
+  "image": "",
+  "price": "33",
+  "descuento": "0",
+  "id": 5
+ },
+ {
+  "name": "sandra alonso",
+  "image": "",
+  "price": "33",
+  "descuento": "44",
+  "id": 6
+ }
+]
