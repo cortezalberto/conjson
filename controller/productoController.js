@@ -37,9 +37,17 @@ let productController = {
 // Función que simula el almacenamiento, en este caso en array
     store: (req, res) => {
         console.log('Entre a store')
+     // Atrapo los contenido del formulario
         const product = req.body;
+
+         // Verificar si viene un archivo, para nombrarlo  
+         product.image = req.file ? req.file.filename : '';
+      
+        console.log(product.image)
+
     // Delego la responsabilidad al modelo para crear producto  
        console.log(product)
+    // Cuidade sólo mando el cuerpo del FORM, el Id me lo asigna el Modelo  
     productModel.create(product);
    
         res.redirect('/')
@@ -61,17 +69,21 @@ let productController = {
 // Función que realiza cambios en el producto seleccionado
     update: (req, res) => {
         console.log("Entré al update")
-        // Armo la estructura del registro
+        // Armo la estructura del registro auxiliar (product)
         // El id lo saco de params y el resto de los campos del body
-        product = req.body;
+        console.log(' soy la nueva: ' +req.body.image)
+        console.log('soy la vieja '+ req.body.oldImage)
+        let  product = req.body;
+
         product.id = req.params.id;
 
+        req.body.image = req.file ? req.file.filename : req.body.oldImagen;
+        console.log(' soy la nueva' +product.image)
+        console.log('soy la vieja '+ product.oldImage)
+        console.log('.......................')
         console.log(product)
        
        
-        //Analizar este caso
-       product.image = req.params.image ? req.body.image : req.body.oldImage;
-        
        
         delete product.oldImage;
 

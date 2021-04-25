@@ -1,10 +1,10 @@
 [
  {
-  "name": "Cafetera ",
-  "image": "img-cafetera-moulinex.jpg",
-  "price": "1",
-  "descuento": "1",
-  "id": "1"
+  "name": "por una mac",
+  "price": "6770",
+  "descuento": "40",
+  "id": "1",
+  "imagen": "img-1619374396861.jpg"
  },
  {
   "id": "2",
@@ -21,10 +21,10 @@
   "image": "img-samsung-galaxy-s10.jpg"
  },
  {
+  "name": "vvv",
+  "price": "23000",
+  "descuento": "10",
   "id": "4",
-  "name": "SmartTv Samsung 43",
-  "descuento": 10,
-  "price": 23000,
-  "image": "img-tv-samsung-smart.jpg"
+  "image": "img-1619374619784.jpg"
  }
 ]
