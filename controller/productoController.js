@@ -37,6 +37,10 @@ let productController = {
 // Función que simula el almacenamiento, en este caso en array
     store: (req, res) => {
         console.log('Entre a store')
+        console.log(req.files);
+    
+
+
      // Atrapo los contenido del formulario
         const product = req.body;
 
@@ -70,21 +74,27 @@ let productController = {
     update: (req, res) => {
         console.log("Entré al update")
         // Armo la estructura del registro auxiliar (product)
-        // El id lo saco de params y el resto de los campos del body
+  
+        let  product = req.body;
+      
+ 
         console.log(' soy la nueva: ' +req.body.image)
         console.log('soy la vieja '+ req.body.oldImage)
-        let  product = req.body;
-
         product.id = req.params.id;
 
-        req.body.image = req.file ? req.file.filename : req.body.oldImagen;
-        console.log(' soy la nueva' +product.image)
-        console.log('soy la vieja '+ product.oldImage)
-        console.log('.......................')
+     
+          product.image = req.file ? req.file.filename : req.body.oldImagen;
+        
+          if (req.body.image===undefined) {
+            product.image = product.oldImage
+        }
+        
+          console.log('.......MOSTRA LA IMAGEN.......')
+        console.log(product.image)
         console.log(product)
        
        
-       
+      // Elimino de la estructura auxiliar, porque no existe en Json 
         delete product.oldImage;
 
 
